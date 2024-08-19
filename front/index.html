@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Upload and Play Music</h2>
+        
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h3>Upload Music</h3>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="text" id="songTitle" name="songTitle" placeholder="Enter song title" required>
+                <input type="text" id="artistName" name="artistName" placeholder="Enter artist name" required>
+                <input type="file" id="musicFile" name="musicFile" accept=".mp3" required>
+                <button type="submit">Upload Music</button>
+            </form>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <h3>Find Music</h3>
+            <input type="text" id="searchMusic" placeholder="Enter part of the song name">
+            <button id="searchMusicButton">Search Music</button>
+            <ul id="musicList"></ul> <!-- List to show potential matches -->
+        </div>
+
+        <!-- Player Section -->
+        <div class="player-section">
+            <h3>Play Music</h3>
+            <audio id="audioPlayer" controls>
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

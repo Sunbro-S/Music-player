@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OM8hHNIPJ5W+hwkrrCnZkxC77h/jtdg/DAU3azJq1cU=",
+  "Source": "identityApi",
+  "BasePath": "_content/identityApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
