@@ -11,4 +11,5 @@ public interface IAuthService
     Task<LoginResponse> Logout(HttpRequest request);
     Task<LoginResponse> DeleteAccount(HttpRequest request);
     Task<LoginResponse> PutAccountChanges(HttpRequest request, UpdateUserDataRequest updateUserModel);
+    Task<bool> AddFavorite(Music message);
 }

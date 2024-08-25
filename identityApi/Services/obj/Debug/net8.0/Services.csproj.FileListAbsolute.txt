@@ -17,3 +17,4 @@ C:\Users\shuks\RiderProjects\Music player\identityApi\Services\obj\Debug\net8.0\
 C:\Users\shuks\RiderProjects\Music player\identityApi\Services\obj\Debug\net8.0\ref\Services.dll
 C:\Users\shuks\RiderProjects\Music player\identityApi\Services\bin\Debug\net8.0\Services.runtimeconfig.json
 C:\Users\shuks\RiderProjects\Music player\identityApi\Services\obj\Debug\net8.0\Services.genruntimeconfig.cache
+C:\Users\shuks\RiderProjects\Music player\identityApi\Services\obj\Debug\net8.0\Services.sourcelink.json

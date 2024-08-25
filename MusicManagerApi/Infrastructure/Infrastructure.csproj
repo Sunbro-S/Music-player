@@ -16,10 +16,15 @@
       </PackageReference>
       <PackageReference Include="Npgsql" Version="8.0.3" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+      <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Data\Files\" />
+      <Folder Include="DI\" />
+    </ItemGroup>
+
+    <ItemGroup>
     </ItemGroup>
 
 </Project>

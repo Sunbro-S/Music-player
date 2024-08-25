@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const token = localStorage.getItem('authToken');
+
+    if (!token) {
+        window.location.href = 'login.html';
+    }
     const uploadForm = document.getElementById("uploadForm");
     const searchMusicButton = document.getElementById("searchMusicButton");
     const musicList = document.getElementById("musicList");

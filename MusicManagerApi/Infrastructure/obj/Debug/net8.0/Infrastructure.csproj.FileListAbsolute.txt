@@ -12,3 +12,4 @@ C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Infrastructure\obj\Deb
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

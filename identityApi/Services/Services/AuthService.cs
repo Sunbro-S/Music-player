@@ -8,6 +8,7 @@ using Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Abstractions;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -90,6 +91,32 @@ public class AuthService : IAuthService
         await _userManager.UpdateAsync(identityUser);
 
         return response;
+    }
+
+    public async Task<bool> AddFavorite(Music message)
+    {
+        var authHeader = message.UserId;
+        string accessToken = authHeader.Substring("Bearer ".Length).Trim();
+        var response = new LoginResponse();
+        var userEmail = GetClaimFromAccessToken(accessToken, ClaimTypes.Email);
+        var user = await _userManager.FindByEmailAsync(userEmail);
+        if (user.RefreshTokenExpiry < DateTime.UtcNow)
+        {
+            user.RefreshToken = null;
+            user.RefreshTokenExpiry = DateTime.UtcNow;
+            await _userManager.UpdateAsync(user);
+            return false;
+        }
+        var userId = GetClaimFromAccessToken(accessToken, ClaimTypes.NameIdentifier);
+        var entity = await _context.Users.FindAsync(userId);
+        var entityFavorits = entity.AllMusicId;
+        if (entityFavorits.Contains(message.MusicId))
+            throw new Exception("Already added");
+        entityFavorits.Add(message.MusicId);
+        entity.AllMusicId = entityFavorits;
+        _context.Users.Update(entity);
+        await _context.SaveChangesAsync();
+        return true;
     }
 
     public async Task<LoginResponse> Logout(HttpRequest request)

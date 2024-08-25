@@ -1,5 +1,9 @@
-﻿using Domain;
+﻿using System.Text;
+using System.Text.Json;
+using Domain;
 using Microsoft.AspNetCore.Mvc;
+using RabbitMQ.Client;
+using RPC.Interface;
 using Services.Services;
 
 namespace MusicManagerApi.Controller;
@@ -11,23 +15,63 @@ public class OrderController : ControllerBase
     private readonly string _musicFolderPath;
     private readonly IMusicOrderService _musicOrderService;
     private readonly IMusicService _musicService;
+    private readonly IRabbitMqServiceSender _mqServiceSender;
     private readonly IPlaylistService _playlistService;
     public OrderController(IMusicOrderService musicOrderService, 
         IMusicService musicService, 
         IPlaylistService playlistService, 
-        IConfiguration configuration)
+        IConfiguration configuration, IRabbitMqServiceSender mqServiceSender)
     {
         _musicOrderService = musicOrderService;
         _musicService = musicService;
         _playlistService = playlistService;
-        
+        _mqServiceSender = mqServiceSender;
+
         _musicFolderPath = configuration["MusicAddress"];
     }
-    [HttpGet("Test")]
-    public IActionResult Test()
+
+    [HttpPost("sent")]
+    public IActionResult SendMessage(object message)
     {
-        return Ok("Controller is working.");
+        var factory = new ConnectionFactory { HostName = "localhost" };
+        using (var connection = factory.CreateConnection())
+        using (var chanel = connection.CreateModel())
+        {
+            chanel.QueueDeclare(queue: "Test",
+                durable: true,
+                exclusive: false,
+                autoDelete: false,
+                arguments: null);
+            var body = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(message));
+            
+            chanel.BasicPublish(exchange:"",
+                routingKey:"Test",
+                basicProperties:null,
+                body:body);
+        }
+
+        return Ok();
     }
+    [HttpPost("AddFavorite")]
+    public IActionResult SendMessage(MusicToAdd message)
+    {
+        string authHeader = Request.Headers["Authorization"].FirstOrDefault();
+        if (authHeader == null || !authHeader.StartsWith("Bearer "))
+        {
+            return null;
+        }
+        var content = new RPCMusic()
+        {
+            UserId = authHeader,
+            MusicId = message.MusicId,
+            Status = message.Status
+        };
+        var result = _mqServiceSender.SendMessage(content);
+        if (result!=null)
+            return Ok("Песня добавлена");
+        return BadRequest("Песня уже есть в избранном");
+    }
+    
 
     [HttpPost("UploadMusic")]
     public async Task<IActionResult> UploadMusic(IFormFile musicFile, string musicName, string author)

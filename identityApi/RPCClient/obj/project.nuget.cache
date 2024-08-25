@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "rw66dqCKc0jsjOxmo7414RQmN1gOPS11lchLSIvNJg3nWRH9+79XBYE2t8ifu4WGyyYmrEwHo6TLVFbgYZ+4cA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\RPCClient\\RPCClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shuks\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
+    "C:\\Users\\shuks\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\shuks\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

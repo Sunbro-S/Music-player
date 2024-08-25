@@ -129,3 +129,5 @@ C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\MusicManagerApi\obj\De
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\MusicManagerApi\obj\Debug\net8.0\MusicManagerApi.pdb
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\MusicManagerApi\obj\Debug\net8.0\MusicManagerApi.genruntimeconfig.cache
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\MusicManagerApi\obj\Debug\net8.0\ref\MusicManagerApi.dll
+C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\MusicManagerApi\obj\Debug\net8.0\MusicManagerApi.sourcelink.json
+C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\MusicManagerApi\bin\Debug\net8.0\RabbitMQ.Client.dll

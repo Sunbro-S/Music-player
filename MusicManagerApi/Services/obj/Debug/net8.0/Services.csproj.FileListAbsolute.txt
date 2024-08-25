@@ -17,3 +17,7 @@ C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\obj\Debug\net
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.pdb
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.genruntimeconfig.cache
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\obj\Debug\net8.0\ref\Services.dll
+C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.sourcelink.json
+C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll

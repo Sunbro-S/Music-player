@@ -12,6 +12,6 @@ public class UserEntity
     
     public string? Icon { get; set; } = null;
     
-    public List<string> AllMusicId { get; set; }
-    public List<string> AllPlaylistId { get; set; }
+    public List<string>? AllMusicId { get; set; }
+    public List<string>? AllPlaylistId { get; set; }
 }
