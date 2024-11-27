@@ -1,12 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Infrastructure.Data.Interfaces;
+using System.ComponentModel.DataAnnotations;
 namespace Infrastructure.Data.Models;
 
 
-public class UserEntity
+public class UserEntity : IUser
 {
-    [Key] public string UserId { get; set; }
+    [Key] 
+    public int UserID { get; set; }
     public string UserName { get; set; }
-    public string Mail { get; set; }
+    public string Email { get; set; }
     public string? Name { get; set; }
     public string? Lastname { get; set; }
     
@@ -14,4 +16,5 @@ public class UserEntity
     
     public List<string>? AllMusicId { get; set; }
     public List<string>? AllPlaylistId { get; set; }
+    
 }

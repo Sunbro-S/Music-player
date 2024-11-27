@@ -141,7 +141,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

@@ -1,0 +1,33 @@
+﻿services:
+  identityapi:
+    image: identityapi
+    build:
+      context: .
+      dockerfile: identityApi/Dockerfile
+    ports:
+      - "8082:8082"
+      - "8083:8083"
+    depends_on:
+      - db
+      - rabbitmq
+
+  musicmanagerapi:
+    image: musicmanagerapi
+    build:
+      context: .
+      dockerfile: musicmanagerapi/Dockerfile
+    ports:
+      - "8081:8081"
+      - "8080:8080"
+    depends_on:
+      - db
+      - rabbitmq
+    
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: Music
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: qe13zc24680
+    ports:
+      - "5432:5432"

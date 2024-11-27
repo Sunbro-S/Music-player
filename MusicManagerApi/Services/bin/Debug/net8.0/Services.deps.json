@@ -857,19 +857,10 @@
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Npgsql": "8.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
-          "RPC": "1.0.0",
           "RabbitMQ.Client": "6.8.1"
         },
         "runtime": {
           "Infrastructure.dll": {}
-        }
-      },
-      "RPC/1.0.0": {
-        "dependencies": {
-          "RabbitMQ.Client": "6.8.1"
-        },
-        "runtime": {
-          "RPC.dll": {}
         }
       },
       "Microsoft.Extensions.Hosting.Abstractions/8.0.0.0": {
@@ -1372,11 +1363,6 @@
       "sha512": ""
     },
     "Infrastructure/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "RPC/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

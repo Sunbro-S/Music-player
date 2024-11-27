@@ -14,7 +14,6 @@
           "Microsoft.EntityFrameworkCore.Design": "8.0.7",
           "Npgsql": "8.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
-          "RPC": "1.0.0",
           "RabbitMQ.Client": "6.8.1"
         },
         "runtime": {
