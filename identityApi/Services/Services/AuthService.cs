@@ -19,35 +19,74 @@ namespace Services.Services;
 
 public class AuthService : IAuthService
 {
-    private readonly UserAuthSQLRepository<ExtendedIdentityUser> _repository;
     private readonly UserManager<ExtendedIdentityUser> _userManager;
     private readonly IConfiguration _config;
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly ContextDb _context;
+    private readonly UserAuthSQLRepository<ExtendedIdentityUser> _repository;
 
-    public AuthService(IConfiguration config,
-         UserAuthSQLRepository<ExtendedIdentityUser> repository)
+    public AuthService(UserManager<ExtendedIdentityUser> userManager, IConfiguration config,
+        RoleManager<IdentityRole> roleManager, ContextDb context, UserAuthSQLRepository<ExtendedIdentityUser> repository)
     {
+        _userManager = userManager;
         _config = config;
+        _roleManager = roleManager;
+        _context = context;
         _repository = repository;
-    }
+            }
 
     public async Task<bool> AddUserWithRoles(RegisterRequest userInfo)
     {
-        return await _repository.CreateUserAsync(userInfo);
+        
+        var user = new ExtendedIdentityUser { UserName = userInfo.UserName, Email = userInfo.Email };
+        var result = await _userManager.CreateAsync(user, userInfo.Password);
+        if (!result.Succeeded)
+            return false;
+
+        foreach (var roleName in userInfo.RolesCommaDelimited.Split(',').Select(x => x.Trim()))
+        {
+           
+            var roleExist = await _roleManager.RoleExistsAsync(roleName);
+            if (!roleExist)
+            {
+                await _roleManager.CreateAsync(new IdentityRole(roleName));
+            }
+
+            await _userManager.AddToRoleAsync(user, roleName);
+        }
+
+        var fullname = userInfo.FullName.Split(" ");
+        var userinfo = new UserEntity
+        {
+            UserId = user.Id,
+            UserName = user.UserName,
+            Mail = user.Email,
+            Name = fullname[1],
+            Lastname = fullname[0]
+        };
+        _context.Users.Add(userinfo);
+        await _context.SaveChangesAsync();
+        return result.Succeeded;
     }
 
     public async Task<LoginResponse> Login(LoginRequest user)
     {
-    }
+        var identityUser = _repository.GetUserByLogin(user.Login).Result;
+        var response = BadLoginResponse();
 
-    public async Task<LoginResponse> Logout(HttpRequest request)
-    {
-    }
+        if (identityUser is null || (await _userManager.CheckPasswordAsync(identityUser, user.Password)) == false)
+        {
+            return response;
+        }
+        
+        var userInfo = await _context.Users.FindAsync(identityUser.Id);
+        response = GoodLoginResponse(identityUser, userInfo);
 
-    public async Task<LoginResponse> DeleteAccount(HttpRequest request)
-    {
-        return await _repository.DeleteUserAsync(request);
+        var result = _repository.TokenRefresh(identityUser, response).Result;
+
+        await _userManager.UpdateAsync(result);
+
+        return response;
     }
 
     public async Task<bool> AddFavorite(Music message)
@@ -56,11 +95,10 @@ public class AuthService : IAuthService
         string accessToken = authHeader.Substring("Bearer ".Length).Trim();
         var response = new LoginResponse();
         var userEmail = GetClaimFromAccessToken(accessToken, ClaimTypes.Email);
-        var user = await _userManager.FindByEmailAsync(userEmail);
+        var user = _repository.GetUserByLogin(userEmail).Result;
         if (user.RefreshTokenExpiry < DateTime.UtcNow)
         {
-            user.RefreshToken = null;
-            user.RefreshTokenExpiry = DateTime.UtcNow;
+            user = _repository.TokenReset(user, response).Result;
             await _userManager.UpdateAsync(user);
             return false;
         }
@@ -76,6 +114,29 @@ public class AuthService : IAuthService
         return true;
     }
 
+    public async Task<LoginResponse> Logout(HttpRequest request)
+    {
+        
+        var accessToken = await _repository.GetAccessToken(request);
+        var response = new LoginResponse();
+        var userEmail = GetClaimFromAccessToken(accessToken, ClaimTypes.Email);
+        var user = await _userManager.FindByEmailAsync(userEmail);
+        if (user.RefreshTokenExpiry < DateTime.UtcNow)
+        {
+            user = _repository.TokenReset(user, response).Result;
+            await _userManager.UpdateAsync(user);
+            return null;
+        }
+
+
+        user = _repository.TokenReset(user, response).Result;
+        await _userManager.UpdateAsync(user);
+
+
+        response = BadLoginResponse();
+
+        return response;
+    }
 
     private string GetClaimFromAccessToken(string accessToken, string claimType)
     {
@@ -149,6 +210,35 @@ public class AuthService : IAuthService
     }
 
 
+    public async Task<LoginResponse> DeleteAccount(HttpRequest request)
+    {
+        string authHeader = request.Headers["Authorization"].FirstOrDefault();
+        if (authHeader == null || !authHeader.StartsWith("Bearer "))
+        {
+            return null;
+        }
+
+        string accessToken = authHeader.Substring("Bearer ".Length).Trim();
+        var userEmail = GetClaimFromAccessToken(accessToken, ClaimTypes.Email);
+        var user = await _userManager.FindByEmailAsync(userEmail);
+        var response = new LoginResponse();
+        var result = await _userManager.DeleteAsync(user);
+        if (!result.Succeeded)
+        {
+            return null;
+        }
+
+        var userInfo = await _context.Users.FindAsync(user.Id);
+        if (userInfo != null)
+        {
+            _context.Users.Remove(userInfo);
+        }
+
+        await _context.SaveChangesAsync();
+
+        response = BadLoginResponse();
+        return response;
+    }
 
     public async Task<LoginResponse> PutAccountChanges(HttpRequest request, UpdateUserDataRequest updateUserModel)
     {

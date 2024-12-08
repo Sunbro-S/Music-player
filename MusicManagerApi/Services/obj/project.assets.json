@@ -1353,6 +1353,7 @@
           "Microsoft.EntityFrameworkCore": "8.0.8",
           "Npgsql": "8.0.3",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
+          "RPC": "1.0.0",
           "RabbitMQ.Client": "6.8.1"
         },
         "compile": {
@@ -1360,6 +1361,19 @@
         },
         "runtime": {
           "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "RPC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "RabbitMQ.Client": "6.8.1"
+        },
+        "compile": {
+          "bin/placeholder/RPC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPC.dll": {}
         }
       }
     }
@@ -3592,6 +3606,11 @@
       "type": "project",
       "path": "../Infrastructure/Infrastructure.csproj",
       "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+    },
+    "RPC/1.0.0": {
+      "type": "project",
+      "path": "../RPC/RPC.csproj",
+      "msbuildProject": "../RPC/RPC.csproj"
     }
   },
   "projectFileDependencyGroups": {

@@ -1,14 +1,11 @@
 ﻿FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 8080
+EXPOSE 80
 EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY ["MusicManagerApi/MusicManagerApi.csproj", "MusicManagerApi/"]
-COPY ["Services/Services.csproj", "Services/"]
-COPY ["Domain/Domain.csproj", "Domain/"]
-COPY ["Infrastructure/Infrastructure.csproj", "Infrastructure/"]
 RUN dotnet restore "MusicManagerApi/MusicManagerApi.csproj"
 COPY . .
 WORKDIR "/src/MusicManagerApi"

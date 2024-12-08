@@ -32,12 +32,7 @@ public class RPCListener : BackgroundService
             exclusive: false,
             autoDelete: false,
             arguments: null);
-        _channel.QueueDeclare(queue: "Test",
-            durable: true,
-            exclusive: false,
-            autoDelete: false,
-            arguments: null);
-        
+
     }
     
 
@@ -48,7 +43,6 @@ public class RPCListener : BackgroundService
         consumer.Received += Consume;
         // Запускаем консьюмера
         _channel.BasicConsume(queue: "musicToAdd", autoAck: false, consumer: consumer);
-        _channel.BasicConsume(queue: "Test", autoAck: false, consumer: consumer);
 
         return Task.CompletedTask;
     }

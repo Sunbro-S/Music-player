@@ -1,0 +1,285 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\infrastructure\\repositories\\userauthsqlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\userauthsqlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{036C9428-9315-488B-9210-FF4A2E901A7C}|Services\\Services.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\services\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{036C9428-9315-488B-9210-FF4A2E901A7C}|Services\\Services.csproj|solutionrelative:services\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\infrastructure\\data\\interfaces\\iuserauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\interfaces\\iuserauthrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DD17268-8335-4B97-81BB-32B30854665C}|identityApi\\identityApi.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\identityapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DD17268-8335-4B97-81BB-32B30854665C}|identityApi\\identityApi.csproj|solutionrelative:identityapi\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\infrastructure\\data\\models\\extendedidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\models\\extendedidentityuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\infrastructure\\data\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DD3738-B967-4FDB-9835-62B0F0E5F895}|Domain\\Domain.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DD3738-B967-4FDB-9835-62B0F0E5F895}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DD3738-B967-4FDB-9835-62B0F0E5F895}|Domain\\Domain.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\domain\\interfaces\\iuserinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DD3738-B967-4FDB-9835-62B0F0E5F895}|Domain\\Domain.csproj|solutionrelative:domain\\interfaces\\iuserinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\infrastructure\\data\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\infrastructure\\contextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41B3E49C-8A84-4B12-B54A-0F51589D6B59}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\contextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DD3738-B967-4FDB-9835-62B0F0E5F895}|Domain\\Domain.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\domain\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1DD3738-B967-4FDB-9835-62B0F0E5F895}|Domain\\Domain.csproj|solutionrelative:domain\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DD17268-8335-4B97-81BB-32B30854665C}|identityApi\\identityApi.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\identityapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0DD17268-8335-4B97-81BB-32B30854665C}|identityApi\\identityApi.csproj|solutionrelative:identityapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{036C9428-9315-488B-9210-FF4A2E901A7C}|Services\\Services.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\services\\servicestartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{036C9428-9315-488B-9210-FF4A2E901A7C}|Services\\Services.csproj|solutionrelative:services\\servicestartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DD17268-8335-4B97-81BB-32B30854665C}|identityApi\\identityApi.csproj|c:\\users\\shuks\\riderprojects\\music player\\identityapi\\identityapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0DD17268-8335-4B97-81BB-32B30854665C}|identityApi\\identityApi.csproj|solutionrelative:identityapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 17,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserAuthRepository.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Data\\Interfaces\\IUserAuthRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Interfaces\\IUserAuthRepository.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Data\\Interfaces\\IUserAuthRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Interfaces\\IUserAuthRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T21:15:17.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\identityApi\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "identityApi\\Controllers\\OrderController.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\identityApi\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "identityApi\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T12:32:37.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUser.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Data\\Interfaces\\IUser.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Interfaces\\IUser.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Data\\Interfaces\\IUser.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Interfaces\\IUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T12:14:27.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\identityApi\\appsettings.json",
+              "RelativeDocumentMoniker": "identityApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\identityApi\\appsettings.json",
+              "RelativeToolTip": "identityApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-27T11:43:01.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Models\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Models\\RegisterRequest.cs",
+              "RelativeToolTip": "Domain\\Models\\RegisterRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:37:04.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserInfoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Interfaces\\IUserInfoRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IUserInfoRepository.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Interfaces\\IUserInfoRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IUserInfoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:31:37.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Data\\Models\\UserEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Models\\UserEntity.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Data\\Models\\UserEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Models\\UserEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:03:48.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ExtendedIdentityUser.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Data\\Models\\ExtendedIdentityUser.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\Models\\ExtendedIdentityUser.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Data\\Models\\ExtendedIdentityUser.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\Models\\ExtendedIdentityUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:03:16.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Services\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Services\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Services\\Services\\AuthService.cs",
+              "RelativeToolTip": "Services\\Services\\AuthService.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAIMAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:01:33.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserAuthSQLRepository.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Repositories\\UserAuthSQLRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\UserAuthSQLRepository.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Repositories\\UserAuthSQLRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\UserAuthSQLRepository.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAowBMAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T11:01:18.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Interfaces\\IRepository.cs",
+              "RelativeDocumentMoniker": "Domain\\Interfaces\\IRepository.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Interfaces\\IRepository.cs",
+              "RelativeToolTip": "Domain\\Interfaces\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:59:55.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServiceStartUp.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Services\\ServiceStartUp.cs",
+              "RelativeDocumentMoniker": "Services\\ServiceStartUp.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Services\\ServiceStartUp.cs",
+              "RelativeToolTip": "Services\\ServiceStartUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:50:23.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContextDb.cs",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\ContextDb.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\ContextDb.cs",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\ContextDb.cs",
+              "RelativeToolTip": "Infrastructure\\ContextDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T10:50:15.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\identityApi\\Dockerfile",
+              "RelativeDocumentMoniker": "identityApi\\Dockerfile",
+              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\identityApi\\Dockerfile",
+              "RelativeToolTip": "identityApi\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-11-27T10:49:55.178Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

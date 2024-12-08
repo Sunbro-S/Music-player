@@ -13,3 +13,6 @@ C:\Users\shuks\RiderProjects\Music player\identityApi\Infrastructure\obj\Debug\n
 C:\Users\shuks\RiderProjects\Music player\identityApi\Infrastructure\bin\Debug\net8.0\Infrastructure.runtimeconfig.json
 C:\Users\shuks\RiderProjects\Music player\identityApi\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\shuks\RiderProjects\Music player\identityApi\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json
+C:\Users\shuks\RiderProjects\Music player\identityApi\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\Users\shuks\RiderProjects\Music player\identityApi\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\Users\shuks\RiderProjects\Music player\identityApi\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date

@@ -1463,6 +1463,7 @@
       },
       "Infrastructure/1.0.0": {
         "dependencies": {
+          "Domain": "1.0.0",
           "MassTransit.AspNetCore": "7.3.1",
           "MassTransit.RabbitMQ": "8.2.4",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.7",

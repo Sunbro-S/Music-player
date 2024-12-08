@@ -1325,6 +1325,19 @@
             "rid": "win"
           }
         }
+      },
+      "RPC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "RabbitMQ.Client": "6.8.1"
+        },
+        "compile": {
+          "bin/placeholder/RPC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RPC.dll": {}
+        }
       }
     }
   },
@@ -3546,6 +3559,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "RPC/1.0.0": {
+      "type": "project",
+      "path": "../RPC/RPC.csproj",
+      "msbuildProject": "../RPC/RPC.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3556,6 +3574,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 8.0.7",
       "Npgsql >= 8.0.3",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.4",
+      "RPC >= 1.0.0",
       "RabbitMQ.Client >= 6.8.1"
     ]
   },
@@ -3591,7 +3610,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\RPC\\RPC.csproj": {
+              "projectPath": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\RPC\\RPC.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
