@@ -21,3 +21,23 @@ C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\obj\Debug\net
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Services\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\bin\Debug\net8.0\Services.deps.json
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\bin\Debug\net8.0\Services.runtimeconfig.json
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\bin\Debug\net8.0\Services.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\bin\Debug\net8.0\Services.pdb
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\bin\Debug\net8.0\Domain.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\bin\Debug\net8.0\Infrastructure.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\bin\Debug\net8.0\Domain.pdb
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\bin\Debug\net8.0\Infrastructure.pdb
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.sourcelink.json
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.pdb
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\Services.genruntimeconfig.cache
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Services\obj\Debug\net8.0\ref\Services.dll

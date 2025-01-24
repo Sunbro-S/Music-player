@@ -1,22 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\",
+  "WorkspaceRootPath": "C:\\Desktop\\Education\\Coding\\max\u0027s music player\\MusicManagerApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D7FCF1EB-A1D3-49E5-BFB9-29766253B388}|Services\\Services.csproj|c:\\users\\shuks\\riderprojects\\music player\\musicmanagerapi\\services\\services\\musicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7FCF1EB-A1D3-49E5-BFB9-29766253B388}|Services\\Services.csproj|solutionrelative:services\\services\\musicservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C89E983-E0CB-4B19-B621-24CD2C56DCFE}|MusicManagerApi\\MusicManagerApi.csproj|c:\\desktop\\education\\coding\\max\u0027s music player\\musicmanagerapi\\musicmanagerapi\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C89E983-E0CB-4B19-B621-24CD2C56DCFE}|MusicManagerApi\\MusicManagerApi.csproj|solutionrelative:musicmanagerapi\\controller\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D7FCF1EB-A1D3-49E5-BFB9-29766253B388}|Services\\Services.csproj|c:\\users\\shuks\\riderprojects\\music player\\musicmanagerapi\\services\\services\\playlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7FCF1EB-A1D3-49E5-BFB9-29766253B388}|Services\\Services.csproj|solutionrelative:services\\services\\playlistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7FCF1EB-A1D3-49E5-BFB9-29766253B388}|Services\\Services.csproj|c:\\users\\shuks\\riderprojects\\music player\\musicmanagerapi\\services\\services\\musicorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7FCF1EB-A1D3-49E5-BFB9-29766253B388}|Services\\Services.csproj|solutionrelative:services\\services\\musicorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D7FCF1EB-A1D3-49E5-BFB9-29766253B388}|Services\\Services.csproj|c:\\users\\shuks\\riderprojects\\music player\\musicmanagerapi\\services\\servicestartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D7FCF1EB-A1D3-49E5-BFB9-29766253B388}|Services\\Services.csproj|solutionrelative:services\\servicestartup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7C89E983-E0CB-4B19-B621-24CD2C56DCFE}|MusicManagerApi\\MusicManagerApi.csproj|c:\\desktop\\education\\coding\\max\u0027s music player\\musicmanagerapi\\musicmanagerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7C89E983-E0CB-4B19-B621-24CD2C56DCFE}|MusicManagerApi\\MusicManagerApi.csproj|solutionrelative:musicmanagerapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,91 +18,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:136:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlaylistService.cs",
-              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\Services\\Services\\PlaylistService.cs",
-              "RelativeDocumentMoniker": "Services\\Services\\PlaylistService.cs",
-              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\Services\\Services\\PlaylistService.cs",
-              "RelativeToolTip": "Services\\Services\\PlaylistService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:26:49.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MusicOrderService.cs",
-              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\Services\\Services\\MusicOrderService.cs",
-              "RelativeDocumentMoniker": "Services\\Services\\MusicOrderService.cs",
-              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\Services\\Services\\MusicOrderService.cs",
-              "RelativeToolTip": "Services\\Services\\MusicOrderService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:26:46.39Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MusicService.cs",
-              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\Services\\Services\\MusicService.cs",
-              "RelativeDocumentMoniker": "Services\\Services\\MusicService.cs",
-              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\Services\\Services\\MusicService.cs",
-              "RelativeToolTip": "Services\\Services\\MusicService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "C:\\Desktop\\Education\\Coding\\max\u0027s music player\\MusicManagerApi\\MusicManagerApi\\Controller\\OrderController.cs",
+              "RelativeDocumentMoniker": "MusicManagerApi\\Controller\\OrderController.cs",
+              "ToolTip": "C:\\Desktop\\Education\\Coding\\max\u0027s music player\\MusicManagerApi\\MusicManagerApi\\Controller\\OrderController.cs",
+              "RelativeToolTip": "MusicManagerApi\\Controller\\OrderController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:26:32.032Z",
+              "WhenOpened": "2025-01-13T15:37:31.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceStartUp.cs",
-              "DocumentMoniker": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\Services\\ServiceStartUp.cs",
-              "RelativeDocumentMoniker": "Services\\ServiceStartUp.cs",
-              "ToolTip": "C:\\Users\\shuks\\RiderProjects\\Music player\\MusicManagerApi\\Services\\ServiceStartUp.cs",
-              "RelativeToolTip": "Services\\ServiceStartUp.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T12:26:28.145Z",
-              "EditorCaption": ""
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Desktop\\Education\\Coding\\max\u0027s music player\\MusicManagerApi\\MusicManagerApi\\appsettings.json",
+              "RelativeDocumentMoniker": "MusicManagerApi\\appsettings.json",
+              "ToolTip": "C:\\Desktop\\Education\\Coding\\max\u0027s music player\\MusicManagerApi\\MusicManagerApi\\appsettings.json",
+              "RelativeToolTip": "MusicManagerApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-13T15:36:24.305Z"
             }
           ]
         }

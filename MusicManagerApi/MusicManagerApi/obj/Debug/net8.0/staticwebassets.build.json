@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "KmeWah8LBZQVpKuhuWxI4yPA3Cg2kRll5udoebwvLLY=",
+  "Hash": "Cs1xwB7htFsJEFN5MxgoT0n5APXNOx6Tm4fUpFkCa8Y=",
   "Source": "MusicManagerApi",
   "BasePath": "_content/MusicManagerApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

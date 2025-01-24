@@ -13,3 +13,18 @@ C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Domain\obj\Debug\net8.
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Domain\obj\Debug\net8.0\ref\Domain.dll
 C:\Users\shuks\RiderProjects\Music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\bin\Debug\net8.0\Domain.runtimeconfig.json
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\bin\Debug\net8.0\Domain.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\Domain.genruntimeconfig.cache
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Domain\obj\Debug\net8.0\ref\Domain.dll
