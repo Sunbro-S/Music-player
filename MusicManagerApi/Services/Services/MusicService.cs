@@ -63,7 +63,7 @@ public class MusicService : IMusicService
 
     }
 
-    public async Task<List<MusicSerchResponse>> GetPotentialMusic(string request, int page = 1, int pageSize = 10)
+    public async Task<List<MusicSearchResponse>> GetPotentialMusic(string request, int page = 1, int pageSize = 10)
     {
         var lowerCaseRequest = request.ToLower();
 
@@ -74,7 +74,7 @@ public class MusicService : IMusicService
         int totalCount = await query.CountAsync();
 
         var musicList = await query
-            .Select(m => new MusicSerchResponse
+            .Select(m => new MusicSearchResponse
             {
                 MusicName = m.MusicName,
                 Author = m.Author

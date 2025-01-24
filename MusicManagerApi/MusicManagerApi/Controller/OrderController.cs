@@ -92,7 +92,7 @@ public class OrderController : ControllerBase
     }
 
     [HttpGet("GetListMusic")]
-    public async Task<List<MusicSerchResponse>> GetListMusic(string request)
+    public async Task<List<MusicSearchResponse>> GetListMusic(string request)
     {
             var listOfMusic = _musicService.GetPotentialMusic(request);
             return await listOfMusic;

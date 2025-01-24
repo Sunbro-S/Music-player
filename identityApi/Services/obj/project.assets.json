@@ -7891,23 +7891,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\shuks\\.nuget\\packages\\": {},
+    "C:\\Users\\Office\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Desktop\\Education\\Coding\\max's music player\\identityApi\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Services\\Services.csproj",
-      "packagesPath": "C:\\Users\\shuks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Services\\obj\\",
+      "projectPath": "C:\\Desktop\\Education\\Coding\\max's music player\\identityApi\\Services\\Services.csproj",
+      "packagesPath": "C:\\Users\\Office\\.nuget\\packages\\",
+      "outputPath": "C:\\Desktop\\Education\\Coding\\max's music player\\identityApi\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\shuks\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Office\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7916,18 +7916,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Domain\\Domain.csproj"
+            "C:\\Desktop\\Education\\Coding\\max's music player\\identityApi\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Desktop\\Education\\Coding\\max's music player\\identityApi\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\shuks\\RiderProjects\\Music player\\identityApi\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Desktop\\Education\\Coding\\max's music player\\identityApi\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Desktop\\Education\\Coding\\max's music player\\identityApi\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -7940,8 +7939,9 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      }
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -8006,8 +8006,50 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"Microsoft.Extensions.Caching.Memory\" 8.0.0 есть известная уязвимость https://github.com/advisories/GHSA-qj66-m88j-hmgj (уровень серьезности: высокий)",
+      "libraryId": "Microsoft.Extensions.Caching.Memory",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"System.Net.Http\" 4.3.0 есть известная уязвимость https://github.com/advisories/GHSA-7jgj-8wvc-jh57 (уровень серьезности: высокий)",
+      "libraryId": "System.Net.Http",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"System.Text.Json\" 8.0.4 есть известная уязвимость https://github.com/advisories/GHSA-8g4q-xg66-9fp4 (уровень серьезности: высокий)",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "У пакета \"System.Text.RegularExpressions\" 4.3.0 есть известная уязвимость https://github.com/advisories/GHSA-cmhx-cq75-c4mj (уровень серьезности: высокий)",
+      "libraryId": "System.Text.RegularExpressions",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
