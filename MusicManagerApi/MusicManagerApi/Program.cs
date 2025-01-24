@@ -1,4 +1,6 @@
+using Domain.Interfaces;
 using Infrastructure;
+using Infrastructure.Data.Repository;
 using Microsoft.EntityFrameworkCore;
 using Services;
 
@@ -10,6 +12,7 @@ builder.Services.AddDbContext<ContextDb>(options =>
         b => b.MigrationsAssembly("MusicManagerApi"));
 });
 builder.Services.TryAddService();
+builder.Services.AddScoped<IMusicRepository, MusicRepository>();
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAllOrigins",

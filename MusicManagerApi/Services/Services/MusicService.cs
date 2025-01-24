@@ -1,18 +1,15 @@
 ﻿using Domain;
-using Infrastructure;
-using Infrastructure.Data.Models;
+using Domain.Interfaces;
 using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
 
 namespace Services.Services;
 
 public class MusicService : IMusicService
 {
-    private readonly ContextDb _context;
-
-    public MusicService(ContextDb context)
+    private readonly IMusicRepository _musicRepository;
+    public MusicService(IMusicRepository musicRepository)
     {
-        _context = context;
+        _musicRepository = musicRepository;
     }
 
     public async Task<bool> PushMusicAsync(IFormFile musicFile,string musicName, string author, string contentPath)
@@ -37,16 +34,7 @@ public class MusicService : IMusicService
                 await musicFile.CopyToAsync(stream);
             }
 
-            var response = new Music()
-            {
-                MusicName = musicName,
-                Author = author,
-                Id = uniqueId.ToString(),
-                FilePath = filePath
-            };
-            _context.Musics.Add(response);
-            await _context.SaveChangesAsync();
-            return true; 
+            return await _musicRepository.AddMusicAsync(musicName, author, uniqueId, filePath); 
         }
         catch
         {
@@ -56,32 +44,18 @@ public class MusicService : IMusicService
     
     public async Task<FileStream> PlaySelectedMusicAsync(string musicName)
     {
-        var searchResponse = _context.Musics.FirstOrDefault(m => m.MusicName == musicName);
+        var searchResponse = await _musicRepository.GetByMusicNameAsync(musicName);
+
         if (searchResponse == null || !System.IO.File.Exists(searchResponse.FilePath))
             throw new FileNotFoundException("Music file not found.");
+
         return new FileStream(searchResponse.FilePath, FileMode.Open, FileAccess.Read);
 
     }
 
     public async Task<List<MusicSearchResponse>> GetPotentialMusic(string request, int page = 1, int pageSize = 10)
     {
-        var lowerCaseRequest = request.ToLower();
-
-        var query = _context.Musics
-            .Where(m => m.MusicName.ToLower().Contains(lowerCaseRequest) ||
-                        m.Author.ToLower().Contains(lowerCaseRequest));
-
-        int totalCount = await query.CountAsync();
-
-        var musicList = await query
-            .Select(m => new MusicSearchResponse
-            {
-                MusicName = m.MusicName,
-                Author = m.Author
-            })
-            .Skip((page - 1) * pageSize)
-            .Take(pageSize)
-            .ToListAsync();
+        var musicList = await _musicRepository.GetPaginatedByNameAsync(request, page, pageSize);
 
         if (musicList == null || musicList.Count == 0)
             throw new FileNotFoundException("Music not found.");

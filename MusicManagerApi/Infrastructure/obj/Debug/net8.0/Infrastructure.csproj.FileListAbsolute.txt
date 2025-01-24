@@ -28,3 +28,6 @@ C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Infrastructure\ob
 C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Infrastructure\bin\Debug\net8.0\Domain.dll
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Infrastructure\bin\Debug\net8.0\Domain.pdb
+C:\Desktop\Education\Coding\max's music player\MusicManagerApi\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date

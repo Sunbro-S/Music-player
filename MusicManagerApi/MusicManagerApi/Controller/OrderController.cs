@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Reflection;
+using System.Text;
 using System.Text.Json;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +28,8 @@ public class OrderController : ControllerBase
         _playlistService = playlistService;
         _mqServiceSender = mqServiceSender;
 
-        _musicFolderPath = configuration["MusicAddress"];
+        _musicFolderPath = Path.Combine(Directory.GetCurrentDirectory(), "Files");
+        //configuration["MusicAddress"];
     }
 
     [HttpPost("sent")]
